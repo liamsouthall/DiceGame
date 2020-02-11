@@ -90,6 +90,7 @@ startButton.addEventListener("click", () => {
   resultTwo.textContent = "";
   totalOne.textContent = "";
   totalTwo.textContent = "";
+  result.textContent = "";
 });
 
 onePlayer.addEventListener("click", () => {
