@@ -11,6 +11,7 @@ const onePlayer = document.getElementById("onePlayer");
 const twoPlayer = document.getElementById("twoPlayer");
 const playersSelect = document.getElementById("playersSelect");
 const diceImageTwo = document.getElementById("diceImageTwo");
+const diceImageTwoBlock = document.getElementById("diceImageTwoBlock");
 let scoreOne = 0;
 let scoreTwo = 0;
 let multiPlayer = false;
@@ -53,14 +54,16 @@ roll.addEventListener("click", () => {
     }
 
     if (scoreOne >= 20) {
-      result.textContent = "Player 1 Wins";
+      resultTwo.textContent = "You Lose";
+      resultOne.textContent = "You Win";
       startButton.style.display = "flex";
       roll.style.display = "none";
       scoreOne = 0;
       scoreTwo = 0;
     }
     if (scoreTwo >= 20) {
-      result.textContent = "Player 2 Wins";
+      resultOne.textContent = "You Lose";
+      resultTwo.textContent = "You Win";
       startButton.style.display = "flex";
       roll.style.display = "none";
       scoreOne = 0;
@@ -90,7 +93,6 @@ startButton.addEventListener("click", () => {
   resultTwo.textContent = "";
   totalOne.textContent = "";
   totalTwo.textContent = "";
-  result.textContent = "";
 });
 
 onePlayer.addEventListener("click", () => {
@@ -105,4 +107,6 @@ twoPlayer.addEventListener("click", () => {
   diceImageTwo.style.display = "flex";
   multiPlayer = true;
   turn = "P2";
+  resultTwo.style.display = "flex";
+  diceImageTwoBlock.style.display = "flex";
 });
