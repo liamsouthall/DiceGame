@@ -1,1 +1,55 @@
-
+#title {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+#playersSelect {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+}
+#onePlayer {
+  font-size: 50px;
+  height: 100px;
+}
+#twoPlayer {
+  font-size: 50px;
+  height: 100px;
+}
+#startButton {
+  display: none;
+  font-size: 25px;
+}
+#result {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+#total {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 50px;
+}
+#totalTwo {
+  display: none;
+}
+#dice {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 200px;
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+#roll {
+  font-size: 25px;
+  display: none;
+}
+#diceImageTwo {
+  display: none;
+}
