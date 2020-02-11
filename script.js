@@ -53,14 +53,14 @@ roll.addEventListener("click", () => {
     }
 
     if (scoreOne >= 20) {
-      result.textContent = "You Win";
+      result.textContent = "Player 1 Wins";
       startButton.style.display = "flex";
       roll.style.display = "none";
       scoreOne = 0;
       scoreTwo = 0;
     }
     if (scoreTwo >= 20) {
-      result.textContent = "You Win";
+      result.textContent = "Player 2 Wins";
       startButton.style.display = "flex";
       roll.style.display = "none";
       scoreOne = 0;
